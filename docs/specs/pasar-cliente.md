@@ -14,6 +14,17 @@ El costo de no resolverlo: ingresos perdidos para el estudio y para el colega, y
 
 **Círculos de confianza, no mercado abierto.** La reputación de quien pasa el cliente queda en juego. Si el colega falla, el cliente culpa a quien lo recomendó. Por eso la v1 solo permite pasar clientes a colegas que el fotógrafo agregó a su círculo y que aceptaron estar ahí. No habrá directorio de desconocidos.
 
+## Después del pase: el cliente decide
+
+**Decisión (fundador, 2026-10-13):** el cliente decide con quién sigue en trabajos futuros, con quien lo recomendó o con el recomendado. Xarpen no asigna un "dueño" del cliente.
+
+Reglas que salen de esa decisión:
+
+1. **Los dos estudios conservan su ficha.** A conserva la consulta original con el historial del pase. B tiene el cliente completo desde que C aceptó compartir sus datos.
+2. **La comisión acordada aplica solo al encargo que se pasó,** salvo que A y B acuerden otra cosa al preparar el pase.
+3. **Transparencia dentro del círculo.** Si A o B van a ofrecerle un nuevo trabajo al cliente, Xarpen les recuerda que el cliente trabajó con el otro colega. Solo se indica el tipo de encargo y la fecha, nunca precios ni notas privadas. Así nadie se entera por sorpresa y la confianza no se rompe.
+4. **Sin mensajes dobles.** Las sugerencias automáticas del ciclo de vida (aniversario, maternidad, etc.) van por defecto al estudio que hizo el último trabajo, para que el cliente no reciba la misma oferta de dos fotógrafos. El otro estudio puede contactarlo por su cuenta. Al final, el cliente elige.
+
 ## Objetivos
 
 1. **Recuperar clientes que hoy se pierden:** que al menos el 30% de las consultas para fechas ocupadas se pasen a un colega en lugar de rechazarse. Es una hipótesis; se mide desde el lanzamiento.
@@ -94,6 +105,7 @@ Consulta de C para fecha ocupada
 | R10 | **Disponibilidad del círculo:** si B usa Xarpen y lo permite, A ve solo "libre/ocupado" en la fecha D, nunca los detalles de la agenda de B. |
 | R11 | **Recordatorio de comisión:** cuando B marca el encargo como contratado, Xarpen prepara el recordatorio del acuerdo. El pago lo confirma una persona. |
 | R12 | **Pasar un encargo completo:** por ejemplo, por una emergencia el día del evento, con contrato y pagos ya registrados. |
+| R13 | **Aviso de cliente compartido:** al preparar una oferta para un cliente que pasó por un pase, Xarpen muestra con qué colega trabajó (tipo de encargo y fecha) y a quién le tocan las sugerencias del ciclo de vida. |
 
 ### P2: no se construye ahora, pero el diseño no debe impedirlo
 
@@ -126,7 +138,6 @@ Estas entidades son genéricas. Ninguna lleva la palabra "fotografía".
 
 | Pregunta | Quién responde | ¿Bloquea? |
 |---|---|---|
-| ¿De quién es el cliente después del pase? ¿Puede A ofrecerle la sesión de aniversario? | Producto + fundador | Sí |
 | ¿Qué exige la ley de protección de datos de cada mercado para compartir datos entre estudios? | Legal | Sí |
 | ¿Las comisiones entre estudios requieren factura o recibo? | Legal / contador | No |
 | ¿El colega invitado entra con un plan gratuito? ¿Por cuánto tiempo? | Negocio | Sí |
